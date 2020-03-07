@@ -27,28 +27,26 @@ class UsernameForm extends React.Component {
 
   render() {
     return (
-      <div className="container">
-        {" "}
-        <h1 style={{ textAlign: "center" }}>Welcome</h1>
-        <br />
+      <section id="entry-page">
         <Form onSubmit={this.onSubmit}>
+          <h2>Welcome!</h2>
+
           <Form.Group as={Row} controlId="formName">
-            <Col sm="10">
+            <Col sm="12">
               <Form.Control
+                size="lg"
                 type="text"
                 placeholder="What is your name?"
                 onChange={this.onchange}
               />
             </Col>
-
-            <Col sm="2">
-              <Button type="submit" variant="info">
-                Submit
-              </Button>{" "}
-            </Col>
           </Form.Group>
+
+          <Button type="submit" variant="info">
+            Submit
+          </Button>
         </Form>
-      </div>
+      </section>
     );
   }
 }

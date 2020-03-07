@@ -36,8 +36,8 @@ class App extends Component {
     if (this.state.currentScreen === "WhatIsYourUsernameScreen") {
       return (
         <div>
-          {/*  <UsernameForm onSubmit={this.onUsernameSubmitted} />*/}
-          <Test onSubmit={this.onUsernameSubmitted} />
+          <UsernameForm onSubmit={this.onUsernameSubmitted} />
+          {/* <Test onSubmit={this.onUsernameSubmitted} />*/}
         </div>
       );
     } else if (this.state.currentScreen === "ChatRoom") {
