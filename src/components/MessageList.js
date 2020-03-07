@@ -36,10 +36,8 @@ class MessageList extends React.Component {
               return (
                 <li key={index} style={styles.li}>
                   <div>
-                    <span style={styles.senderUsername}>
-                      {message.senderId}
-                    </span>
-                    <p style={styles.message}>{message.text}</p>
+                    <div className="message-username"> {message.senderId}</div>
+                    <p className="message-text">{message.text}</p>
                   </div>
                 </li>
               );

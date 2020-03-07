@@ -4,12 +4,12 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   margin: 0;
 }
 
 * {
-
   font-weight: 400;
 }
 
@@ -29,8 +29,6 @@ p {
 }
 
 .entry-page {
-
-
   grid-gap: 10px;
   width: 100%;
   height: 100vh;
@@ -39,7 +37,6 @@ p {
   animation: Gradient 15s ease infinite;
   box-sizing: border-box;
 }
-
 
 section#entry-page {
   display: grid;
@@ -165,4 +162,22 @@ section#entry-page form button:hover {
   100% {
     background-position: 0% 50%;
   }
+}
+
+/*test*/
+.message-text {
+  background: #5ea3d0;
+  color: white;
+  display: inline;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+
+
+.message-username {
+  font-size: 16px;
+  color: var(--main-text-color);
+  opacity: 0.9;
+  margin-bottom: 6px;
 }
